@@ -5,10 +5,24 @@
     </head>
 
     <body>
+    <div class="content">   
         <h1>Reinalta Sugianto</h1>
-        <img src="/image/foto.jpg" alt="Profile Picture">
-        <h1>Profil singkat</h1>
-        <h1>Biodata</h1>
+        <img src="/image/foto.jpg" alt="Profile Picture" class="center">
+        <h2 class="border">Profil singkat</h2>
+            <div class="text">
+
+            </div>
+
+        <h2 class="border">Biodata</h2>
+            <div class="text">
+                Reinalta lahir di tanggal 14 Desember 1998 di <s>Bandung</s> <u>Cirebon</u>.
+            </div>
+
+        <h2 class="border">Motto Hidup</h2>
+            <div class="text">
+                Bekerja keras dan bersikap baiklah. Hal luar biasa akan terjadi.
+            </div>
+    </div> 
     </body>
 
 </html>
@@ -18,7 +32,7 @@
         background-color: yellow;
     }
 
-    h1 {
+    h1,h2 {
         color: black;
         text-align: center;
     }
@@ -28,7 +42,25 @@
         font-size: 20px;
     }
 
-    image{
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .border {
+        order-style: dashed;
+    }
+
+    .content{
         text-align: center;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .text{
+        text-align: justify;
+        font-size: 20px;
     }
 </style>
